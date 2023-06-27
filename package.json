@@ -5,9 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@antfu/eslint-config": "^0.39.5"
-  },
-  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.5",
     "eslint": "^8.43.0"
   }
 }
