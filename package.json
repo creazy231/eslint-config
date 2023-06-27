@@ -1,0 +1,11 @@
+{
+  "name": "eslint-config-qwellcode",
+  "version": "1.0.0",
+  "description": "ESLint config for qwellcode",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.5",
+    "eslint": "^8.43.0"
+  }
+}
