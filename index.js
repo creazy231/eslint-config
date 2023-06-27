@@ -1,21 +1,28 @@
+const { isPackageExists } = require('local-pkg');
+const TS = isPackageExists('typescript');
+
+const TS_RULES = TS ? {
+  "@typescript-eslint/quotes": [
+    "error",
+    "double",
+  ],
+  "@typescript-eslint/semi": [
+    "error",
+    "always",
+  ],
+  "@typescript-eslint/comma-dangle": [
+    "error",
+    "always-multiline",
+  ],
+  "@typescript-eslint/no-console": "off",
+} : {};
+
 module.exports = {
   extends: [ "@antfu" ],
   plugins: [],
   rules: {
     // TypeScript
-    "@typescript-eslint/quotes": [
-      "error",
-      "double",
-    ],
-    "@typescript-eslint/semi": [
-      "error",
-      "always",
-    ],
-    "@typescript-eslint/comma-dangle": [
-      "error",
-      "always-multiline",
-    ],
-    "@typescript-eslint/no-console": "off",
+    ...TS_RULES,
 
     // JavaScript
     "quotes": [
