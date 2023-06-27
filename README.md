@@ -22,6 +22,13 @@ module.exports = {
 ```
 
 ## Nuxt.js
+```bash
+# npm
+npm install -D @nuxt/eslint-config
+
+# yarn
+yarn add -D @nuxt/eslint-config
+```
 ```js
 // .eslintrc.js
 module.exports = {
