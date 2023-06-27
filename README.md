@@ -13,7 +13,21 @@ yarn add -D git+https://github.com/qcodesolutions/eslint-config-qwellcode.git
 // .eslintrc.js
 module.exports = {
   extends: [
-    'qwellcode'
+    "qwellcode"
+  ],
+  rules: {
+    // your overrides
+  }
+}
+```
+
+## Nuxt.js
+```js
+// .eslintrc.js
+module.exports = {
+  extends: [
+    "@nuxt/eslint-config",
+    "qwellcode",
   ],
   rules: {
     // your overrides
