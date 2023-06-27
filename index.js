@@ -15,6 +15,7 @@ module.exports = {
       "error",
       "always-multiline",
     ],
+    "@typescript-eslint/no-console": "off",
 
     // JavaScript
     "quotes": [
@@ -37,6 +38,7 @@ module.exports = {
       "error",
       "always",
     ],
+    "no-console": "off",
 
     // Vue
     "vue/first-attribute-linebreak": [ "error", {
