@@ -15,7 +15,11 @@ const TS_RULES = TS ? {
     "always-multiline",
   ],
   "@typescript-eslint/no-console": "off",
-} : {};
+  "@typescript-eslint/brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+  "@typescript-eslint/ban-ts-comment": "off",
+} : {
+  "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+};
 
 module.exports = {
   extends: [ "@antfu" ],
