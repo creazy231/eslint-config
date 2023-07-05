@@ -2,10 +2,10 @@
 
 ```bash
 # npm
-npm install -D git+https://github.com/qcodesolutions/eslint-config-qwellcode.git
+npm install -D @creazy231/eslint-config
 
 # yarn
-yarn add -D git+https://github.com/qcodesolutions/eslint-config-qwellcode.git
+yarn add -D @creazy231/eslint-config
 ```
 
 # Usage
@@ -13,7 +13,7 @@ yarn add -D git+https://github.com/qcodesolutions/eslint-config-qwellcode.git
 // .eslintrc.js
 module.exports = {
   extends: [
-    "qwellcode"
+    "@creazy231"
   ],
   rules: {
     // your overrides
@@ -24,17 +24,17 @@ module.exports = {
 ## Nuxt.js
 ```bash
 # npm
-npm install -D @nuxt/eslint-config
+npm install -D @nuxt/eslint-config @creazy231/eslint-config
 
 # yarn
-yarn add -D @nuxt/eslint-config
+yarn add -D @nuxt/eslint-config @creazy231/eslint-config
 ```
 ```js
 // .eslintrc.js
 module.exports = {
   extends: [
     "@nuxt/eslint-config",
-    "qwellcode",
+    "@creazy231",
   ],
   rules: {
     // your overrides
