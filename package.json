@@ -1,11 +1,11 @@
 {
-  "name": "@qwellcode/eslint-config",
-  "version": "1.0.10",
+  "name": "@creazy231/eslint-config",
+  "version": "1.0.11",
   "description": "ESLint config for qwellcode",
   "main": "index.js",
   "license": "MIT",
   "author": "Tobias Thiele <info@tobias-thiele.de> (https://github.com/creazy231/)",
-  "homepage": "https://qwellcode.de",
+  "homepage": "https://tobias-thiele.de",
   "keywords": [
     "eslint-config"
   ],
@@ -25,9 +25,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qcodesolutions/eslint-config-qwellcode.git"
+    "url": "git+https://github.com/creazy231/eslint-config.git"
   },
   "bugs": {
-    "url": "https://github.com/qcodesolutions/eslint-config-qwellcode/issues"
+    "url": "https://github.com/creazy231/eslint-config/issues"
   }
 }
