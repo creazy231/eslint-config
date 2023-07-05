@@ -1,6 +1,6 @@
 {
   "name": "@qwellcode/eslint-config",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ESLint config for qwellcode",
   "main": "index.js",
   "license": "MIT",
@@ -22,5 +22,12 @@
   "devDependencies": {
     "bumpp": "^9.1.1",
     "eslint": "^8.44.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qcodesolutions/eslint-config-qwellcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qcodesolutions/eslint-config-qwellcode/issues"
   }
 }
