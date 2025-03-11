@@ -1,6 +1,6 @@
 {
   "name": "@creazy231/eslint-config",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "ESLint config for qwellcode",
   "main": "index.js",
   "license": "MIT",
@@ -13,10 +13,11 @@
     "release": "bumpp -r"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8"
   },
   "dependencies": {
     "@antfu/eslint-config": "^0.39.7",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "local-pkg": "^0.4.3"
   },
   "devDependencies": {
