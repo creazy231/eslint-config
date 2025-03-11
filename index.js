@@ -36,7 +36,8 @@ const TS_RULES = TS
   };
 
 module.exports = {
-  extends: [ "@antfu" ],
+  root: true,
+  extends: [ "@antfu", "plugin:tailwindcss/recommended" ],
   plugins: [],
   rules: {
     // TypeScript
@@ -66,10 +67,31 @@ module.exports = {
     "no-console": "off",
     "curly": [ "error", "multi-line", "consistent" ],
 
+    // Tailwind
+    "tailwindcss/no-custom-classname": "off",
+    
+    // Other rules
+    "no-restricted-globals": "off",
+    "antfu/if-newline": "off",
+    "n/prefer-global/process": "off",
+    
     // Vue
+    "vue/no-deprecated-slot-attribute": "off",
     "vue/first-attribute-linebreak": [ "error", {
       singleline: "ignore",
       multiline: "below",
+    } ],
+    "vue/max-attributes-per-line": [ "error", {
+      singleline: {
+        max: 10, // Allow multiple attributes on a single line
+      },
+      multiline: {
+        max: 1, // If multiline, only one attribute per line
+      },
+    } ],
+    "vue/html-closing-bracket-newline": [ "error", {
+      singleline: "never", // No newline for single-line elements
+      multiline: "always", // Always newline for multiline elements
     } ],
     "vue/component-tags-order": [ "error", {
       order: [ "docs", "template", "script:not([setup])", "script[setup]", "style[scoped]", "style:not([scoped])" ],
@@ -90,5 +112,10 @@ module.exports = {
       ],
       alphabetical: false,
     } ],
+  },
+  settings: {
+    tailwindcss: {
+      callees: [ "tw", "apply", "twMerge" ],
+    },
   },
 };
